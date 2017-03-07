@@ -2,6 +2,6 @@ function foo() {
     console.log('Foo')
 }
 
-foo();
+process.nextTick(foo);
 
 console.log('Bar');
