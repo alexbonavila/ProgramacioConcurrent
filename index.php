@@ -1,13 +1,18 @@
 <?php
 
-function b($callback){
-    echo "b\n";
-
+function myEcho($callback){
+    if (is_callable($callback)){
     call_user_func($callback);
+    }else{
+        echo $callback;
+    }
 }
 
-function a(){
+function otro(){
     echo "a\n";
 }
 
-b('a');
+myEcho('otro');
+
+$x=5;
+myEcho($x);
