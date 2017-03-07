@@ -1,3 +1,7 @@
-/**
- * Created by alex on 7/03/17.
- */
+function foo() {
+    console.log('Foo')
+}
+
+foo();
+
+console.log('Bar');
