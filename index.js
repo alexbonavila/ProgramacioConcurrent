@@ -1,7 +1,8 @@
-function foo() {
-    console.log('Foo')
+function b(cb) {
+    console.log('b');
+    cb();
 }
 
-process.nextTick(foo);
-
-console.log('Bar');
+b(function () {
+    console.log('a')
+});
